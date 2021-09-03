@@ -1,0 +1,18 @@
+cách cài babel
+yarn add @babel/core @babel/preset-env babel-loader @babel/plugin-transform-runtime -D
+@babel/core là phần lõi của babel, nơi chứa các thuật toán của nó
+@babel/preset-env là một bộ cài đặt giúp bạn biên dịch code Javascript về cú pháp cũ hơn (nếu không setting gì thì mặc định target là ES5 và modules là auto).
+@babel/plugin-transform-runtime: Nếu không dùng cái này thì khi dùng async await bạn sẽ bị lỗi
+babel-loader giúp bạn tích hợp babel vào trong webpack
+
+
+yarn add css-loader file-loader sass sass-loader style-loader -D
+style-loader, css-loader giúp bạn có thể import được css vào file js
+sass, sass-loader giúp bạn biên dịch scss sang css
+file-loader giúp bạn import được các file ví dụ như ảnh, video vào file js
+
+cài webpack
+yarn add webpack webpack-cli webpack-dev-server -D
+webpack là phần lõi của webpack
+webpack-cli giúp ta gõ được lệnh của webpack trên terminal
+webpack-dev-server hỗ trợ tạo một server localhost cho môi trường dev
